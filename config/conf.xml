@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Config>
+   <enabled>true</enabled>
+   <path>/usr/local</path>
+   <Info>
+      <aa>123</aa>
+   </Info>
+</Config>

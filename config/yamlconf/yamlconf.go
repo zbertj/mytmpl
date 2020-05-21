@@ -7,11 +7,8 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-// Conf 全局的配置变量
-var Conf Config
-
-// Config 配置文件结构体
-type Config struct {
+// config 配置文件结构体
+type config struct {
 	Host string `yaml:"host"`
 	User string `yaml:"user"`
 	Pwd  string `yaml:"pwd"`
@@ -20,6 +17,9 @@ type Config struct {
 		Bbb int
 	}
 }
+
+// Conf 全局的配置变量
+var Conf config
 
 // InitConfig 初始化配置函数
 func InitConfig(file string) error {
@@ -34,7 +34,6 @@ func InitConfig(file string) error {
 		return err
 	}
 	return nil
-
 }
 
 /*

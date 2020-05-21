@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "path": "/usr/local",
+    "info": {
+        "a": 1
+    }
+}
