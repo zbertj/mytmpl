@@ -1,0 +1,6 @@
+host: localhost:3306
+user: tigerwolfc
+pwd: 654321
+info: 
+    aaa: 111
+    bbb: 222
