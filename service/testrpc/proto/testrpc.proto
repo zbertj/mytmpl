@@ -1,0 +1,40 @@
+// 版本号
+syntax = "proto3";
+
+// 指定生成的包名 testrpc.pb.go
+package proto;
+
+// 请求
+message UserRequest {
+    // 定义请求参数
+    string name = 1;
+}
+
+// 响应
+message UserResponse {
+    // 定义响应参数
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+    // 字段修饰符  可变数组，类似于切片
+    repeated string hobby = 4;
+}
+
+// 相当于接口
+// service 定义开放调用服务
+service UserInfoService {
+    // 相当于接口内的方法
+    // 定义请求参数为UserRequest，响应参数为UserResponse
+    rpc GetUserInfo (UserRequest) returns (UserResponse){}
+}
+
+/*
+go get github.com/golang/protobuf/proto
+go get google.golang.org/grpc
+go get github.com/golang/protobuf/protoc-gen-go
+下载 https://github.com/protocolbuffers/protobuf/releases/download/v3.9.0/protoc-3.9.0-win64.zip
+解压后将protoc移动到bin目录下
+protoc -I . --go_out=plugins=grpc:. ./testrpc.proto 生成pb.go
+
+
+*/
