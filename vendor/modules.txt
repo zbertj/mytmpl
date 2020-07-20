@@ -1,6 +1,28 @@
 # github.com/BurntSushi/toml v0.3.1
 ## explicit
 github.com/BurntSushi/toml
+# github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
+## explicit
+github.com/StackExchange/wmi
+# github.com/containerd/containerd v1.3.6
+## explicit
+github.com/containerd/containerd/errdefs
+github.com/containerd/containerd/log
+github.com/containerd/containerd/platforms
+# github.com/dsnet/compress v0.0.1
+## explicit
+github.com/dsnet/compress
+github.com/dsnet/compress/bzip2
+github.com/dsnet/compress/bzip2/internal/sais
+github.com/dsnet/compress/internal
+github.com/dsnet/compress/internal/errors
+github.com/dsnet/compress/internal/prefix
+# github.com/frankban/quicktest v1.10.0
+## explicit
+# github.com/go-ole/go-ole v1.2.4
+## explicit
+github.com/go-ole/go-ole
+github.com/go-ole/go-ole/oleutil
 # github.com/go-redis/redis v6.15.8+incompatible
 ## explicit
 github.com/go-redis/redis
@@ -17,12 +39,56 @@ github.com/golang/protobuf/ptypes
 github.com/golang/protobuf/ptypes/any
 github.com/golang/protobuf/ptypes/duration
 github.com/golang/protobuf/ptypes/timestamp
-# github.com/kr/pretty v0.1.0
+# github.com/golang/snappy v0.0.1
 ## explicit
+github.com/golang/snappy
+# github.com/konsorten/go-windows-terminal-sequences v1.0.3
+github.com/konsorten/go-windows-terminal-sequences
+# github.com/mholt/archiver v3.1.1+incompatible
+## explicit
+github.com/mholt/archiver
+# github.com/nwaples/rardecode v1.1.0
+## explicit
+github.com/nwaples/rardecode
 # github.com/onsi/ginkgo v1.10.1
 ## explicit
 # github.com/onsi/gomega v1.7.0
 ## explicit
+# github.com/opencontainers/go-digest v1.0.0
+## explicit
+github.com/opencontainers/go-digest
+# github.com/opencontainers/image-spec v1.0.1
+## explicit
+github.com/opencontainers/image-spec/specs-go
+github.com/opencontainers/image-spec/specs-go/v1
+# github.com/pierrec/lz4 v2.5.2+incompatible
+## explicit
+github.com/pierrec/lz4
+github.com/pierrec/lz4/internal/xxh32
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/shirou/gopsutil v2.20.6+incompatible
+## explicit
+github.com/shirou/gopsutil/cpu
+github.com/shirou/gopsutil/disk
+github.com/shirou/gopsutil/host
+github.com/shirou/gopsutil/internal/common
+github.com/shirou/gopsutil/mem
+github.com/shirou/gopsutil/net
+github.com/shirou/gopsutil/process
+# github.com/sirupsen/logrus v1.6.0
+## explicit
+github.com/sirupsen/logrus
+# github.com/ulikunitz/xz v0.5.7
+## explicit
+github.com/ulikunitz/xz
+github.com/ulikunitz/xz/internal/hash
+github.com/ulikunitz/xz/internal/xlog
+github.com/ulikunitz/xz/lzma
+# github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8
+## explicit
+github.com/xi2/xz
 # golang.org/x/net v0.0.0-20190923162816-aa69164e4478
 ## explicit
 golang.org/x/net/http/httpguts
@@ -34,6 +100,7 @@ golang.org/x/net/trace
 # golang.org/x/sys v0.0.0-20191010194322-b09406accb47
 ## explicit
 golang.org/x/sys/unix
+golang.org/x/sys/windows
 # golang.org/x/text v0.3.2
 ## explicit
 golang.org/x/text/secure/bidirule
@@ -129,3 +196,5 @@ gopkg.in/warnings.v0
 # gopkg.in/yaml.v2 v2.3.0
 ## explicit
 gopkg.in/yaml.v2
+# gotest.tools v2.2.0+incompatible
+## explicit
