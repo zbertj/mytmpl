@@ -66,7 +66,7 @@ func (f *FileLogger) log(lv string, format string, a ...interface{}) {
 			if newFileObj != nil {
 				f.fileObj = newFileObj
 			}
-			fmt.Fprintf(f.fileObj, "[%s] [%s] [%s:%s:%d] Err%s\n", now.Format("2006-01-02 15:04:05"), lv, fileName, funcName, lineNo, msg)
+			fmt.Fprintf(f.fileObj, "[%s] [%s] [%s:%s:%d] %s\n", now.Format("2006-01-02 15:04:05"), lv, fileName, funcName, lineNo, msg)
 		}
 		if f.Mode == "f+" {
 			if stringToLogLevel(lv) >= ERROR {

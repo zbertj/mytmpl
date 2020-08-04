@@ -38,6 +38,14 @@ const (
 // LogLevel 自定义uint6类型
 type LogLevel uint16
 
+// Log ...
+var Log Logger
+
+// var (
+// 	Flog FileLogger
+// 	Clog ConsoleLogger
+// )
+
 // Logger 定义Logger接口
 type Logger interface {
 	Debug(format string, a ...interface{})
